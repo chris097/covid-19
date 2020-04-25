@@ -1,0 +1,19 @@
+{
+  "name": "covid-19-app",
+  "version": "1.0.0",
+  "description": "covid-19",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chris097/covid-19-app.git"
+  },
+  "author": "OkeyHacker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chris097/covid-19-app/issues"
+  },
+  "homepage": "https://github.com/chris097/covid-19-app#readme"
+}
