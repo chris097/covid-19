@@ -1,0 +1,491 @@
+.covid-banner{
+    position: relative;
+    padding: 4rem 0 0 0;
+}
+.covid-banner .covid-angle{
+    position: absolute;
+}
+.covid-banner .covid-angle2{
+    position: absolute;
+    top: 7.5rem;
+}
+.covid-banner .covid-angle3{
+    position: absolute;
+    right: 0;
+    top: 7.7rem;
+}
+.covid-banner .covid-angle4{
+    position: absolute;
+    top: 30rem;
+}
+.covid-banner .covid-circle{
+    position: absolute;
+    top: 8.8rem;
+    right: 18rem;
+}
+.covid-banner .covid-circle1{
+    position: absolute;
+    right: 9.7rem;
+    top: 28rem;
+}
+.covid-banner .covid-rectangle{
+    position: absolute;
+    right: 0;
+    top: 35rem;
+}
+.covid-banner .covid-rectangle1{
+    position: absolute;
+    right: 0;
+    top: 40.1rem;
+}
+
+.covid-banner_container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin: 0;
+}
+.covid-banner_container .covid-banner_tittle > h1{
+    font-size: 70px;
+    margin-top: 20px;
+}
+.covid-banner_container .covid-banner_tittle > h2{
+    color: #c65e64;
+    font-size: 50px;
+}
+.covid-banner_container .covid-banner_tittle > p{
+    width: 450px;
+    padding: 20px 0;
+}
+.covid-banner_container .covid-banner_tittle > button{
+    padding: 20px 60px;
+    border: 1px solid #3273dc;
+}
+.covid-banner_container .covid-banner_tittle > button:hover{
+    background-color: #e6ecf7;
+    border: none;
+}
+.covid-banner_image img{
+    width: 370px;
+    height: 370px;
+    position: relative;
+    margin-top: 3rem;
+    object-fit: cover;
+    border-radius: 10px;
+    clip-path: polygon(7% 7%, 100% 0%, 100% 100%, 0% 100%);
+}
+.covid-banner_image1 img{
+    width: 370px;
+    height: 338px;
+    position: absolute;
+    top: 20rem;
+    right: 13.5rem;
+    object-fit: cover;
+    border-radius: 10px;
+    clip-path: polygon(7% 7%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.realtime-data-section{
+    padding-top: 8.3rem;
+}
+.realtime-data-section h1{
+    font-size: 35px;
+}
+.realtime-data-flex{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+}
+.realtime-data-column{
+    box-shadow: inset -4px -4px 6px #ffffff, -4px -4px 7px rgba(0, 0, 0, 0.07);
+    padding: 20px;
+    width: 300px;
+    margin: 0 10px;
+    line-height: 1.4;
+    text-align: center;
+    border-radius: 10px;
+}
+.realtime-data-card-tittle{
+    font-size: 18px;
+    padding: 20px 0;
+    color: #acaaaa;
+    font-weight: 200;
+}
+.realtime-data-card-count{
+    font-size: 30px;
+    font-weight: 600;
+}
+.realtime-data-card-count-off{
+    color: #f16969;
+}
+.realtime-data-card-count-off > span{
+    color: #118a11;
+}
+
+.covid-countries-flex{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    margin: 7px;
+    margin-bottom: 3rem;
+}
+
+.covid-search-card{
+    box-shadow: inset -4px -4px 6px #ffffff, -4px -4px 7px rgba(0, 0, 0, 0.07);
+    padding: 35px 0px 0px 0px;
+    border-radius: 10px;
+    height: 100%;
+}
+.search-input{
+    box-shadow: inset -4px -4px 6px #ffffff, -4px -4px 7px rgba(0, 0, 0, 0.07);
+    width: 300px;
+    padding: 15px 10px;
+    margin: 0 30px;
+    border-radius: 10px;
+}
+.covid-search-card .search-input{
+    display: flex;
+}
+.search-input input{
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+}
+.search-input img{
+    width: 20px;
+    margin: 0 5px;
+}
+.covid-countries-content{
+    padding-top: 20px;
+}
+.covid-countries-content ul{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+.covid-countries-name-code{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 0 0;
+    padding: 2px 30px;
+}
+.covid-countries-content li:hover{
+    background: #e6ecf7;
+    color: #333;
+}
+.covid-current-flex-end{
+    height: 30px;
+    background-color: #f16969;
+    padding: 6px 4px;
+    margin: 5px 0;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #fff;
+}
+.covid-country-code{
+    color: #3273dc;
+    font-size: 28px;
+    margin-right: 10px;
+    display: inline-block;
+}
+.covid-country-code img{
+    width: 35px;
+}
+.covid-country-code span{
+    font-size: 14px;
+    position: absolute;
+    margin: 7px 10px;
+    color: #333;
+}
+
+.covid-map-card{
+    display: flex;
+    box-shadow: inset -4px -4px 6px #ffffff, -4px -4px 7px rgba(0, 0, 0, 0.07);
+    margin: 0px 0px 0px 20px;
+    border-radius: 10px;
+    padding: 0 2rem 0 0;
+}
+.covid-map-locator img{
+    margin: -2px 0px -6.5px 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 100%;
+}
+.covid-map-dense{
+    padding: 10px 10px 0px 15px;
+}
+.covid-map-dense h1{
+   font-size: 50px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.covid-inner-map{
+    font-size: 14px;
+    margin: 0 10px;
+    color: #acaaaa;
+}
+.covid-19-checkout{
+    padding: 1rem 0 1rem 0;
+    color: #acaaaa;
+    font-size: 13px;
+    border-bottom: 1px solid #acaaaa;  
+}
+.covid-states{
+    padding-top: 20px;
+}
+.covid-states > p{
+    font-size: 12px;
+    font-weight: 600;
+}
+.covid-states-container img{
+    width: 60px;
+    height: 40px;
+    border-radius: 2px;
+}
+.covid-states-content span{
+    font-size: 14px;
+}
+
+
+.covid-symptoms{
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding: 2rem 0 0 0;
+}
+.covid-symptoms-i{
+    font-size: 90px;
+}
+.covid-angle-ext{
+    width: 155px;
+    position: absolute;
+    top: 50px;
+}
+.covid-symptom-title{
+    font-size: 50px;
+}
+.covid-symptoms-text{
+    width: 550px;
+    color: #acaaaa;
+}
+.covid-symptom-content{
+    width: 150px;
+    box-shadow: inset -4px -4px 6px #ffffff, -4px -4px 7px rgba(0, 0, 0, 0.07);
+    border-radius: 10rem;
+    padding: 30px;
+    margin: 20px 5px;
+}
+.covid-symptom-content img{
+    width: 60px;
+}
+.covid-symptom-content p{
+    font-size: 12px;
+    text-align: center;
+    margin: 5px 0;
+}
+.btn-1{
+    border: none;
+    background-color: #3273dc;
+    color: #fff;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 20px 0 3rem 0;
+    outline: none;
+}
+.btn-2{
+    border: none;
+    background-color: #3273dc;
+    color: #fff;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 2px;
+    margin: 20px 0 3rem 12.5rem;
+    outline: none;
+}
+.btn-1:hover{
+    background-color: #e6ecf7;
+    color: #333;
+}
+.covid-symptoms-image{
+  position: absolute;
+  right: 50px;
+  top: 100px;
+  clip-path: polygon(50% 0%, 100% 0, 80% 80%, 0 100%, 0% 75%, 0 0);
+}
+.covid-symptoms-image img{
+  width: 450px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.covid-contagion{
+    padding: 2.5rem 0 2rem 0;
+    border-bottom: 1px solid #eee;
+}
+.covid-contagion-circle{
+    position: absolute;
+    margin: 50px 0 0px 50px;
+}
+.covid-contagion-circle1{
+    position: absolute;
+    margin-top: 27rem;
+    left: 32rem;
+}
+.covid-contagion-reddot{
+    position: absolute;
+    margin: 28.5rem 0 0 70px;
+}
+.covid-contagion-image img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: 2;
+}
+.covid-contagion-text{
+    padding: 0 0 0 4.5rem;
+}
+.covid-contagion-ii{
+    font-size: 90px;
+}
+.covid-contagion-tittle{
+    font-size: 50px;
+}
+
+.covid-prevention{
+    border-bottom: 1px solid #eee;
+}
+.covid-prevention-circle{
+    position: absolute;
+    right: 24rem;
+}
+.covid-prevention-circle1{
+    position: absolute;
+    right: 20.5rem;
+    margin-top: 21rem;
+}
+.covid-prevention-reddot{
+    position: absolute;
+    right: 6.5rem;
+    margin-top: 40rem;
+}
+
+.covid-prevention-text{
+    padding-top: 2rem;
+}
+.covid-prevention-iii{
+    font-size: 90px;
+}
+.covid-prevention-tittle{
+    font-size: 50px;
+}
+.covid-prevention-content{
+    width: 550px;
+    color: #726e6e;
+}
+.prevention-inner-image{
+    padding-top: 3rem;
+    margin-left: 200px;
+}
+.prevention-inner-image img{
+  width: 400px;
+  height: 350px;
+  object-fit: cover;
+  clip-path: polygon(50% 0%, 100% 0, 80% 80%, 0 100%, 0% 75%, 0 0);
+  border-radius: 10px;
+}
+.prevention-inner-image2 img{
+  width: 400px;
+  height: 350px;
+  object-fit: cover;
+  clip-path: polygon(50% 0%, 100% 0, 80% 80%, 0 100%, 0% 75%, 0 0);
+  border-radius: 10px;
+}
+.prevention-inner-image2{
+    margin: 30px 0 0 150px;
+}
+.covid-prevention-content-img{
+    width: 150px;
+    box-shadow: inset -4px -4px 6px #ffffff, -4px -4px 7px rgba(0, 0, 0, 0.07);
+    border-radius: 10rem;
+    padding: 30px;
+    margin: 20px 10px;
+}
+.covid-prevention-content-img img{
+    width: 60px;
+}
+.covid-prevention-content-img p{
+    font-size: 12px;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.covid-info-section{
+    padding-top: 2rem;
+}
+.covid-info-tittle{
+    text-align: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    font-size: 30px;
+    padding: 20px 0;
+}
+.covid-info-card{
+    width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 8px 8px 0 8px;
+}
+.covid-info-img > img{
+    width: 280px;
+    height: 200px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.covid-info-text{
+    padding: 20px;
+}
+
+.footer{
+    background: #1e62e7;
+    padding: 40px 30px 30px 30px;
+    margin-top: 2.5rem;
+}
+.covid-19-footer_logo span > img{
+    width: 80px;
+}
+.covid-19-footer_logo span > a{
+    position: absolute;
+    margin: 20px 5px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+.footer-tittle{
+    font-size: 25px;
+    color: #fff;
+}
+.footer-text{
+    color: #fff;
+    width: 400px;
+}
+.footer-number > h1{
+    color: #fff;
+    font-size: 25px;
+}
+.footer-number > p{
+    width: 500px;
+    color: #fff;
+}
+.footer-bottom{
+    border-top: 1px solid #eee;
+    background: #1e62e7;
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+}
+.footer-bottom span{
+    font-weight: 600;
+}

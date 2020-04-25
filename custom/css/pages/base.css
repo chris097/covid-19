@@ -1,0 +1,88 @@
+/***************
+           Utilities 
+**********/
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.column-flex{
+    display: flex;
+}
+.container-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    color: #3273dc;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #363636;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+  }
+  
+  h1{ font-size: 30px;}
+  h2{ font-size: 26.5px;}
+  h3{ font-size: 24.5px;}
+  h4{ font-size: 23px;}
+  h1{ font-size: 20px;}
+  h1{ font-size: 18px;}
+
+  img{
+      width: 100%;
+  }
+  
+  p,
+  ol,
+  ul,
+  dl {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  li{ list-style: none; }
+  
+.mlf50{
+    margin: 0 0 0 5rem;
+}
+.mg-5{
+    margin: 0 8px;
+}
+.text-center{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+.flag{
+    width: 60px;
+}
+.col-red{
+    color: #f16969;
+}
+.col-green{
+    color: green;
+}
+.col-black{
+    color: #363636;
+}
+.fs-25{
+    font-size: 20px;
+    font-weight: 600;
+}
+.fs-17{
+    font-size: 12px;
+    font-weight: 500;
+}

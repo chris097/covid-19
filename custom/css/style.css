@@ -1,0 +1,8 @@
+/*************
+All pages for the covid-19 application will be import here.
+Please be careful on you are removing or deleting.
+*********/
+@import "pages/base.css";
+@import "pages/index.css";
+@import "pages/header.css";
+@import "pages/covid.css";
