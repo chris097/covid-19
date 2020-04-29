@@ -66,14 +66,17 @@
     border: none;
 }
 .covid-banner_image img{
-    width: 370px;
-    height: 370px;
+    width: 400px;
+    height: 400px;
     position: relative;
-    margin-top: 3rem;
+    margin-top: 5.5rem;
+    margin-right: 2rem;
     object-fit: cover;
+    /*
     border-radius: 10px;
-    clip-path: polygon(7% 7%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(7% 7%, 100% 0%, 100% 100%, 0% 100%);*/
 }
+/*
 .covid-banner_image1 img{
     width: 370px;
     height: 338px;
@@ -84,7 +87,7 @@
     border-radius: 10px;
     clip-path: polygon(7% 7%, 100% 0%, 100% 100%, 0% 100%);
 }
-
+*/
 .realtime-data-section{
     padding-top: 8.3rem;
 }
@@ -200,18 +203,20 @@
 .covid-map-card{
     display: flex;
     box-shadow: inset -4px -4px 6px #ffffff, -4px -4px 7px rgba(0, 0, 0, 0.07);
-    margin: 0px 0px 0px 20px;
+    margin: 0px 0px 0px 10px;
     border-radius: 10px;
-    padding: 0 2rem 0 0;
 }
 .covid-map-locator img{
-    margin: -2px 0px -6.5px 0px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     height: 100%;
 }
 .covid-map-dense{
-    padding: 10px 10px 0px 15px;
+    width: 300px;
+    padding: 10px 0px 0px 0px;
+}
+.covid-map-dense div > img{
+    padding: 0px 0px 0px 10px;
 }
 .covid-map-dense h1{
    font-size: 50px;
@@ -223,26 +228,74 @@
     color: #acaaaa;
 }
 .covid-19-checkout{
-    padding: 1rem 0 1rem 0;
+    padding: 1rem 1rem 20px .5rem;
+    margin: 0 10px;
     color: #acaaaa;
     font-size: 13px;
     border-bottom: 1px solid #acaaaa;  
 }
-.covid-states{
-    padding-top: 20px;
+.covid-19-checkout div{
+    margin: 0 10px;
 }
+.covid-states{
+    padding-top: 20px 0;
+    width: 100%;
+    height: 350px;
+    overflow-y: scroll;
+}
+  /*Track */
+  .covid-states::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  /* Handle */
+  .covid-states::-webkit-scrollbar-thumb {
+    background: #356dfb;
+  }
+  .covid-states::-webkit-scrollbar {
+    width: 2px;
+  }
+  /* Handle on hover */
+  .covid-staes::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 .covid-states > p{
     font-size: 12px;
     font-weight: 600;
 }
+.covid-states-container{
+    margin: 20px 0;
+}
 .covid-states-container img{
     width: 60px;
-    height: 40px;
-    border-radius: 2px;
+    height: 35px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.covid-states-container:hover{
+    background-color: #e6ecf7;
+    border-right: 3px solid #f34d4d;
 }
 .covid-states-content span{
     font-size: 14px;
+    padding: 0 4px;
 }
+.covid-confirmed-cases div{
+    padding:  0 0 0 4px;
+    font-size: 11px;
+    display: flex;
+}
+.covid-confirmed-cases div span{
+    font-size: 11px;
+    padding: 0 0 0 2px;
+    color: #aaaaaa;
+}
+.covid-confirmed-cases div:last-child{
+    color: #77e777;
+}
+.covid-confirmed-cases div:nth-child(2){
+    color: #f34d4d;
+}
+
 
 
 .covid-symptoms{
@@ -297,23 +350,24 @@
     color: #fff;
     padding: 12px;
     font-size: 18px;
-    border-radius: 2px;
+    border-radius: 5px;
     margin: 20px 0 3rem 12.5rem;
     outline: none;
 }
-.btn-1:hover{
-    background-color: #e6ecf7;
-    color: #333;
+.btn-1:hover,
+.btn-2:hover{
+    background-color: #034ec7;
 }
 .covid-symptoms-image{
   position: absolute;
-  right: 50px;
-  top: 100px;
-  clip-path: polygon(50% 0%, 100% 0, 80% 80%, 0 100%, 0% 75%, 0 0);
+  right: 80px;
+  top: 150px;
+  /*clip-path: polygon(50% 0%, 100% 0, 80% 80%, 0 100%, 0% 75%, 0 0);
+  */
 }
 .covid-symptoms-image img{
-  width: 450px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -322,34 +376,42 @@
     padding: 2.5rem 0 2rem 0;
     border-bottom: 1px solid #eee;
 }
+.covid-contagion:hover{
+    background-color: #e6ecf7;
+}
 .covid-contagion-circle{
     position: absolute;
     margin: 50px 0 0px 50px;
 }
 .covid-contagion-circle1{
     position: absolute;
-    margin-top: 27rem;
-    left: 32rem;
+    margin-top: 22rem;
+    left: 28rem;
 }
 .covid-contagion-reddot{
     position: absolute;
-    margin: 28.5rem 0 0 70px;
+    margin: 26.5rem 0 0 70px;
 }
 .covid-contagion-image img{
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
     border-radius: 10px;
     z-index: 2;
 }
+/*
 .covid-contagion-text{
-    padding: 0 0 0 4.5rem;
-}
+    padding: 0 0 0 0rem;
+}*/
 .covid-contagion-ii{
     font-size: 90px;
 }
 .covid-contagion-tittle{
     font-size: 50px;
+}
+.covid-contagion-content{
+    width: 500px;
+    color: #aaaaaa;
 }
 
 .covid-prevention{
@@ -367,7 +429,7 @@
 .covid-prevention-reddot{
     position: absolute;
     right: 6.5rem;
-    margin-top: 40rem;
+    margin-top: 28rem;
 }
 
 .covid-prevention-text{
@@ -388,27 +450,30 @@
     margin-left: 200px;
 }
 .prevention-inner-image img{
-  width: 400px;
-  height: 350px;
+  width: 380px;
+  height: 380px;
   object-fit: cover;
+  margin-top: 3rem;
+  position: relative;
+  /*
   clip-path: polygon(50% 0%, 100% 0, 80% 80%, 0 100%, 0% 75%, 0 0);
-  border-radius: 10px;
-}
+  border-radius: 10px;*/
+}/*
 .prevention-inner-image2 img{
   width: 400px;
   height: 350px;
   object-fit: cover;
   clip-path: polygon(50% 0%, 100% 0, 80% 80%, 0 100%, 0% 75%, 0 0);
   border-radius: 10px;
-}
+}*/
 .prevention-inner-image2{
     margin: 30px 0 0 150px;
 }
 .covid-prevention-content-img{
     width: 150px;
     box-shadow: inset -4px -4px 6px #ffffff, -4px -4px 7px rgba(0, 0, 0, 0.07);
-    border-radius: 10rem;
-    padding: 30px;
+    border-radius: 10px;
+    padding: 10px;
     margin: 20px 10px;
 }
 .covid-prevention-content-img img{
@@ -488,4 +553,39 @@
 }
 .footer-bottom span{
     font-weight: 600;
+}
+
+.clear-fix{
+    width: 100%;
+    height: 100%;
+    background: #444;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .6;
+    transition: all .4s;
+    z-index: 2;
+    display: none;
+}
+
+.covid-read-more{
+    width: 450px;
+    position: fixed;
+    top: 30px;
+    z-index: 2;
+    background-color: #fff;
+    display: none;
+}
+
+.read-more-content{
+    padding: 50px 30px;
+}
+.remove-burger-bar{
+    float: right;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #ddd;
+}
+.remove-burger-bar:hover{
+    color: #333;
 }

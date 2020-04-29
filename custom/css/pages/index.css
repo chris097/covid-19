@@ -2,7 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
 
-html {
+html,
+body {
   box-sizing: border-box;
   background-color: #f5f5f5;
   /* background-image: linear-gradient(180deg, #fff, #f5f5fa); */
@@ -12,6 +13,23 @@ html {
   overflow-y: scroll;
   text-rendering: auto;
   text-size-adjust: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+html::-webkit-scrollbar-thumb {
+  background: #356dfb;
+}
+html::-webkit-scrollbar {
+  width: 4px;
+}
+/* Handle on hover */
+html::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 *,
@@ -34,3 +52,28 @@ body {
     cursor: pointer;
     position: relative;
   }
+
+  /*
+
+  .scrollable-cases-div {
+  width: 100%;
+  height: 350px;
+  overflow-y: scroll;
+}
+/* Track 
+.scrollable-cases-div::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle 
+.scrollable-cases-div::-webkit-scrollbar-thumb {
+  background: #356dfb;
+}
+.scrollable-cases-div::-webkit-scrollbar {
+  width: 2px;
+}
+/* Handle on hover 
+.scrollable-cases-div::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+  */

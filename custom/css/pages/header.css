@@ -61,3 +61,80 @@
     border: none;
     border-bottom: none;
 }
+    .burger-menu-open,
+     .burger-menu-close{
+         display: none;
+     }
+
+@media screen and (max-width: 768px){
+    /* .covid-map-card{
+         margin: 0 200px 200px 0;
+     }
+     .covid-map-locator img{
+         display: none;
+     }*/
+     .covid-19_nav-link ul{
+         display: none;
+     }
+     .burger-menu-open{
+       width: 30px;
+       height: 30px;
+       position: fixed;
+       right: 18px;
+       top: 22px;
+       z-index: 2;
+       display: block;
+   }
+   .burger-menu-close{
+       display: none;
+       width: 20px;
+       height: 20px;
+       position: fixed;
+       right: 23px;
+       top: 25px;
+       z-index: 2;
+   }
+   .hamburger-menu{
+       width: 60%;
+       position: fixed;
+       top: 76.9px;
+       left: 0;
+       z-index: 2;
+       background-color: #fff;
+       padding: 20px 10px;
+       display: none;
+   }
+   .hamburger-menu ul li{
+       padding: 10px 0;
+   }
+   .covid-symptoms-image{
+       display: none;
+   }
+ }
+ @media screen and (max-width: 650px){
+     .column-block{
+         display: block;
+     }
+     .covid-countries-flex,
+     .covid-map-card{
+         display: block;
+         flex-direction: column;
+     }
+     .covid-contagion-image{
+         display: none;
+     }
+     .covid-contagion-content{
+         
+         padding: 0 5px;
+     }
+     .realtime-data-flex{
+        flex-direction: column;
+     }
+     .covid-banner_image{
+         display: none;
+     }
+     .mg-0{
+         margin: 0;
+     }
+    
+    }

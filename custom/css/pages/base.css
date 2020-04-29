@@ -58,7 +58,7 @@ a:hover {
     margin: 0 0 0 5rem;
 }
 .mg-5{
-    margin: 0 8px;
+    margin: 0 5px;
 }
 .text-center{
     text-align: center;
@@ -86,3 +86,11 @@ a:hover {
     font-size: 12px;
     font-weight: 500;
 }
+.column{ 
+    display: flex;
+    max-width: 450px;
+}
+.mgtop-10{
+    margin-top: 10px;
+}
+

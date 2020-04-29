@@ -17,22 +17,29 @@
                         <img src="./custom/icons/logo.svg" alt="covid-19 logo">
                     </span>
                     <span>
-                        <a href="index.html">Covid-19</a>
+                        <a href="#app">Covid-19</a>
                     </span>
                 </div><!--covid-91 logo-->
                 <div class="covid-19_nav-link"><!--covid-19_nav-link-->
                     <ul>
-                        <li class="clicked">Situation</li>
-                        <li>Contagion</li>
-                        <li>Symptoms</li>
-                        <li>Prevention</li>
-                        <span>Contact Number</span>
+                        <li class="clicked"><a href="#realtime-data-section">Situations</a></li>
+                        <li><a href="#covid-contagion">Contagion</a></li>
+                        <li><a href="#covid-symptoms">Symptoms</a></li>
+                        <li><a href="#covid-prevention">Prevention</a></li>
+                        <span><a href="#footer">Contact Number</a></span>
                     </ul>
                 </div><!--covid-19_nav-link-->
             </div><!--covid-19 navbar-->
         </div><!---column-->
     </header><!--covid-19 header contents ends here-->
     </div><!--id header-->
+    <!-- burger menu-->
+    <div class="burger-menu-open"><!--burger menu-->
+        <img src="./custom/img/menu.png" alt="">
+    </div><!--burger menu-->
+    <div class="burger-menu-close"><!--burger menu close-->
+        <img src="./custom/img/close.png" alt="">
+    </div><!--burger menu close-->
        <!--------- This section covers the main body of the appliction ------------->
     <section class="covid-banner"><!--covid-19 main container-->
         <div class="covid-angle">
@@ -65,19 +72,17 @@
                     <h1>Coronavirus</h1>
                     <h2>(COVID-19)</h2>
                     <p>Coronaviruses (CoV) are a large family of viruses that cause illness ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS-CoV) and Severe Acute Respiratory Syndrome (SARS-CoV).</p>
-                    <button><a href="#">Read More</a></button>
+                    <button class="button-1"><a href="#">Read More</a></button>
                 </div><!--covid banner tittle--->
                 <div class="covid-banner_img-container"><!--covid banner image-->
                     <div class="covid-banner_image"><!--covid banner image-->
-                        <img src="./custom/img/covid19a.jpg" alt="">
+                        <img src="./custom/img/coronavirus.svg" alt="">
                     </div><!--covid banner image-->
-                    <div class="covid-banner_image1"><!--covid banner image 1-->
-                        <img src="./custom/img/covid19b.jpg" alt="">
-                    </div><!--covid banner image 1-->
+                   
                 </div><!--covid banner image--->
             </div><!--covid banner container-->
         </div><!--container-->
-        <div class="realtime-data-section"><!--realtime data section-->
+        <div class="realtime-data-section" id="realtime-data-section"><!--realtime data section-->
             <div class="container"><!--container-->
                 <h1>Realtime Monitoring of CORVID-19</h1>
                 <div class="realtime-data-flex"><!--realtime data flex-->
@@ -189,41 +194,107 @@
                                 <span>Africa</span>
                             </div>
                             </div><!--column flex is a utility located @base.css-->
-                            <div class="column-flex text-center covid-19-checkout"><!--column flex-->
-                                <div>
+                            <div class="column-flex covid-19-checkout"><!--column flex-->
+                                <div class="text-center">
                                     <span class="col-red fs-25">55</span>
-                                    <span class="mg-5">Confirmed</span>
+                                    <p class="mg-5">Confirmed</p>
                                 </div>
-                                <div>
+                                <div class="text-center">
                                     <span class="col-black fs-25">10</span>
-                                    <span class="mg-5">Deaths</span>
+                                    <p class="mg-5">Deaths</p>
                                 </div>
-                                <div>
+                                <div class="text-center">
                                     <span class="col-green fs-25">45</span>
-                                    <span class="mg-5">Recovered</span>
+                                    <p class="mg-5">Recovered</p>
                                 </div>
                             </div><!--column flex-->
                           <!--Uncompleted slide start next line here-->
                           <div class="covid-states"><!--covid states-->
-                            <p>Total 55 cases confirmed in 4 states</p>
+                            <p class="text-center mgtop-10">Total 55 cases confirmed in 4 states</p>
                             <div class="column-flex covid-states-container"><!--column flex-->
                                 <img src="./custom/img/covid19a.jpg" alt="">
                                 <div class="covid-states-content">
                                     <span>Lagos State</span>
-                                    <span class="column-flex">
-                                        <p>confirmed</p>
-                                        <p>confirmed</p>
-                                        <p>confirmed</p>
-                                    </span>
+                                    <div class="column-flex covid-confirmed-cases">
+                                        <div>confirmed <span>50</span><span>|</span></div>
+                                        <div>Death <span>20</span><span>|</span></div>
+                                        <div>Recovered <span>5000</span></div>
+                                    </div>
                                 </div>
-                            </div><!--column flex-->
+                            </div><!--column flex covid states container-->
+                            <div class="column-flex covid-states-container"><!--column flex-->
+                                <img src="./custom/img/covid19a.jpg" alt="">
+                                <div class="covid-states-content">
+                                    <span>Imo State</span>
+                                    <div class="column-flex covid-confirmed-cases">
+                                        <div>confirmed <span>50</span><span>|</span></div>
+                                        <div>Death <span>20</span><span>|</span></div>
+                                        <div>Recovered <span>5000</span></div>
+                                    </div>
+                                </div>
+                            </div><!--column flex covid states container-->
+                            <div class="column-flex covid-states-container"><!--column flex-->
+                                <img src="./custom/img/covid19a.jpg" alt="">
+                                <div class="covid-states-content">
+                                    <span>Abia State</span>
+                                    <div class="column-flex covid-confirmed-cases">
+                                        <div>confirmed <span>50</span><span>|</span></div>
+                                        <div>Death <span>20</span><span>|</span></div>
+                                        <div>Recovered <span>5000</span></div>
+                                    </div>
+                                </div>
+                            </div><!--column flex covid states container-->
+                            <div class="column-flex covid-states-container"><!--column flex-->
+                                <img src="./custom/img/covid19a.jpg" alt="">
+                                <div class="covid-states-content">
+                                    <span>Abuja State</span>
+                                    <div class="column-flex covid-confirmed-cases">
+                                        <div>confirmed <span>50</span><span>|</span></div>
+                                        <div>Death <span>20</span><span>|</span></div>
+                                        <div>Recovered <span>5000</span></div>
+                                    </div>
+                                </div>
+                            </div><!--column flex covid states container-->
+                            <div class="column-flex covid-states-container"><!--column flex-->
+                                <img src="./custom/img/covid19a.jpg" alt="">
+                                <div class="covid-states-content">
+                                    <span>Abuja State</span>
+                                    <div class="column-flex covid-confirmed-cases">
+                                        <div>confirmed <span>50</span><span>|</span></div>
+                                        <div>Death <span>20</span><span>|</span></div>
+                                        <div>Recovered <span>5000</span></div>
+                                    </div>
+                                </div>
+                            </div><!--column flex covid states container-->
+                            <div class="column-flex covid-states-container"><!--column flex-->
+                                <img src="./custom/img/covid19a.jpg" alt="">
+                                <div class="covid-states-content">
+                                    <span>Abuja State</span>
+                                    <div class="column-flex covid-confirmed-cases">
+                                        <div>confirmed <span>50</span><span>|</span></div>
+                                        <div>Death <span>20</span><span>|</span></div>
+                                        <div>Recovered <span>5000</span></div>
+                                    </div>
+                                </div>
+                            </div><!--column flex covid states container-->
+                            <div class="column-flex covid-states-container"><!--column flex-->
+                                <img src="./custom/img/covid19a.jpg" alt="">
+                                <div class="covid-states-content">
+                                    <span>Abuja State</span>
+                                    <div class="column-flex covid-confirmed-cases">
+                                        <div>confirmed <span>50</span><span>|</span></div>
+                                        <div>Death <span>20</span><span>|</span></div>
+                                        <div>Recovered <span>5000</span></div>
+                                    </div>
+                                </div>
+                            </div><!--column flex covid states container-->
                         </div><!--covid states-->
                         </div><!--covid map dense-->
                     </div><!--covid map card--->
                 </div><!--covid countries flex-->
             </div><!--container-->
         </div><!--realtime data section-->
-        <div class="covid-symptoms"><!--covid symptoms-->
+        <div class="covid-symptoms" id="covid-symptoms"><!--covid symptoms-->
             <div class="covid-angle-ext">
                 <img src="./custom/img/angle4.svg" alt="">
             </div>
@@ -238,7 +309,7 @@
                             More rarely, the disease can be serious and even fatal. Older people, and people with other medical 
                             conditions (such as asthma, diabetes, or heart disease), may be more vulnerable to becoming 
                             severely ill.</p>
-                            <div class="column-flex"><!--column flex-->
+                            <div class="column-flex column-block"><!--column flex-->
                                 <div class="covid-symptom-content"><!--covid symptom content-->
                                     <div class="text-center"><img src="./custom/img/iconfinder___cough_coughing_symptom_5925233.png" alt=""></div>
                                     <p>coughing/sneezing</p>
@@ -256,15 +327,15 @@
                                     <p>Cifia pain</p>
                                 </div><!--covid symptom content-->
                             </div><!--column flex-->
-                            <button class="btn-1">Read More</button>
+                            <button class="btn-1 button-2">Read More</button>
                     </div><!--covid symptoms ext-->
                     <div class="covid-symptoms-image"><!--covid symptoms image-->
-                        <img src="./custom/img/washinghands.jpg" alt="">
+                        <img src="./custom/img/cough.svg" alt="">
                     </div><!--covid symptoms image-->
                 </div><!--column flex-->
             </div><!--container-->
         </div><!--covid symptoms-->
-        <div class="covid-contagion"><!--covid contagion-->
+        <div class="covid-contagion" id="covid-contagion"><!--covid contagion-->
             <div class="covid-contagion-circle">
                 <img src="./custom/img/circle.svg" alt="">
             </div>
@@ -275,9 +346,9 @@
                 <img src="./custom/img/reddots.svg" alt="">
             </div>
             <div class="container"><!--container-->
-                <div class="column-flex"><!--container flex-->
+                <div class="container-flex"><!--container flex-->
                     <div class="covid-contagion-image"><!--covid contagion image-->
-                        <img src="./custom/img/healthworkers.jpg" alt="">
+                        <img src="./custom/img/virus-transmission.svg" alt="">
                     </div><!--covid contagion image-->
                     <div class="covid-contagion-text"><!--covid contagion text-->
                         <h1 class="covid-contagion-ii">2</h1>
@@ -285,12 +356,12 @@
                         <p class="covid-contagion-content">Coronavirus disease spreads primarily through contact with an infected
                              person when they cough or sneeze. It also spreads when a person touches a surface 
                              or object that has thevirus on it, then touches their eyes, nose, or mouth.</p>
-                             <button class="btn-1">Read More</button>
+                             <button class="btn-1 button-3">Read More</button>
                     </div><!--covid contagion text-->
                 </div><!--container flex-->
             </div><!--container-->
         </div><!--covid contagion-->
-        <div class="covid-prevention"><!--covid prevention-->
+        <div class="covid-prevention" id="covid-prevention"><!--covid prevention-->
             <div class="container"><!--container-->
                 <div class="covid-prevention-circle">
                     <img src="./custom/img/bluecircle.svg" alt="">
@@ -310,7 +381,7 @@
                         It also spreads when a person touches a surface or object that has the virus on it, 
                         then touches their eyes, nose, or mouth.
                        </p>
-                       <div class="column-flex"><!--column flex-->
+                       <div class="column-flex column-block"><!--column flex-->
                         <div class="covid-prevention-content-img"><!--covid prevention content-img-->
                             <div class="text-center"><img src="./custom/img/iconfinder___cough_coughing_symptom_5925233.png" alt=""></div>
                             <p>coughing/sneezing</p>
@@ -324,7 +395,7 @@
                             <p>Tireness</p>
                         </div><!--covid prevention content-img-->
                        </div><!--column flex-->
-                       <div class="column-flex mlf50"><!--covid flex-->
+                       <div class="column-flex mlf50 mg-0 column-block"><!--covid flex-->
                         <div class="covid-prevention-content-img"><!--covid prevention content-img-->
                             <div class="text-center"><img src="./custom/img/iconfinder___tiredness_tired_fatigue_5925227.png" alt=""></div>
                             <p>Tireness</p>
@@ -334,11 +405,11 @@
                             <p>Cifia pain</p>
                         </div><!--covid prevention content-img-->
                     </div><!--column flex-->
-                    <button class="btn-2">Read More</button>
+                    <button class="btn-2 button-4">Read More</button>
                     </div><!--covid prevention text-->
                     <div class="covid-prevention-image"><!--convid prevention image-->
-                        <div class="prevention-inner-image"><img src="./custom/img/sanitizer.jpg" alt=""></div>
-                        <div class="prevention-inner-image2"><img src="./custom/img/sanitizer.jpg" alt=""></div>
+                        <div class="prevention-inner-image"><img src="./custom/img/stay-home.svg" alt=""></div>
+                       
                     </div><!--covid prevention image-->
                 </div><!--container flex is a utility located @base.css-->
             </div><!--container-->
@@ -358,7 +429,7 @@
                     </div><!--column flex-->
                 </div><!--covid info card-->
             </div><!--container-->
-            <div class="footer"><!--footer-->
+            <div class="footer" id="footer"><!--footer-->
                 <div class="column-flex"><!--column flex-->
                     <div>
                         <div class="covid-19-footer_logo">
@@ -366,7 +437,7 @@
                                 <img src="./custom/icons/logo.svg" alt="covid-19 logo">
                             </span>
                             <span>
-                                <a href="index.html">Covid-19</a>
+                                <a href="#app">Covid-19</a>
                             </span>
                         </div><!--covid-91 logo-->
                         <h1 class="footer-tittle">Source :</h1>
@@ -384,7 +455,42 @@
                 <p>Designed by <span>OkeyHacker</span></p>
             </div><!--footer bottom-->
         </div><!--covid info section-->
+        <!-- after section-->
+        <div class="clear-fix"></div>
+        <div class="container column"><!--read more container-->
+            <div class="covid-read-more"><!--covid read more-->
+                <div class="remove-burger-bar"><!--remove burger menu-->X</div><!--remove burger menu-->
+                <div class="read-more-content"><!--read more content-->
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Aspernatur facilis, sed ullam rem rerum mollitia esse iure
+                         repellat consectetur, cupiditate nesciunt laudantium 
+                         necessitatibus distinctio? Quas, praesentium nam distinctio 
+                         fugiat ad architecto numquam eaque quos
+                         modi ullam corrupti repudiandae, eveniet nostrum! Lorem 
+                         ipsum dolor sit amet consectetur adipisicing elit. Non ad
+                          aspernatur eos fugit vitae, inventore amet nostrum natus modi, 
+                          ipsam alias dolorum harum, maiores illo possimus mollitia? Minus 
+                          fuga sequi provident, nesciunt ad quibusdam ex, 
+                         natus incidunt sapiente aliquam voluptatibus.</p>
+                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                             Ab rem quibusdam ad, dolore architecto velit id officia 
+                             cumque adipisci labore laudantium suscipit atque nisi. 
+                             Beatae quis recusandae blanditiis ipsum labore.</p>
+                </div><!--read more content-->
+            </div><!--covid read more-->
+        </div><!--container-->
+        <div class="hamburger-menu"><!--hambuge menu-->
+            <ul>
+                <li><a href="#realtime-data-section">Situations</a></li>
+                <li><a href="#covid-contagion">Contagion</a></li>
+                <li><a href="#covid-symptoms">Symptoms</a></li>
+                <li><a href="#covid-prevention">Prevention</a></li>
+                <span><a href="#footer">Contact Number</a></span>
+            </ul>
+        </div><!--hambuger menu-->
     </section><!--covid-19 main container-->
     </div><!--app-->
+    <script src="./custom/js/index.js"></script>
 </body>
 </html>
