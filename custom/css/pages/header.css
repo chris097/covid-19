@@ -168,6 +168,16 @@
     .covid-info-text{
         width: 100px;
     }
+    .covid-countries-flex,
+    .covid-map-card{
+        margin: 10px 0 !important;
+    }
+    .btn-1{
+        margin: 0 10px !important;
+    }
+    .covid-prevention-reddot{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 350px){
