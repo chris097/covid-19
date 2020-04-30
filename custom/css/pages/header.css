@@ -62,7 +62,8 @@
     border-bottom: none;
 }
     .burger-menu-open,
-     .burger-menu-close{
+     .burger-menu-close,
+     .hamburger-menu{
          display: none;
      }
 
@@ -110,10 +111,14 @@
    .covid-symptoms-image{
        display: none;
    }
+   .covid-prevention-content-img{
+    width: 25vw !important;
+}
  }
  @media screen and (max-width: 650px){
      .column-block{
          display: block;
+         flex-direction: column;
      }
      .covid-countries-flex,
      .covid-map-card{
@@ -134,7 +139,7 @@
          display: none;
      }
      .mg-0{
-         margin: 0;
+         margin: 0 50px;
      }
      .banner-heading{
         font-size: 20px;
@@ -145,10 +150,31 @@
     .covid-banner_tittle > h1{
         font-size: 60px !important;
     }
+    
+    .covid-symptom-content{
+        width: 100px;
+        margin: 0;
+    }
+    .realtime-data-column{
+        width: 100% !important;
+        margin: 10px 0px !important;
+    }
+    .button-4{
+        margin: 10px 0 50px 100px !important;
+    }
+    .covid-info-img img{
+       width: 200px !important; 
+    }
+    .covid-info-text{
+        width: 100px;
+    }
 }
 
-@media screen and (min-width: 350px){
+@media screen and (max-width: 350px){
     .covid-banner_tittle > h1{
         font-size: 50px !important;
+    }
+    .covid-map-locator{
+        display: none;
     }
 }
