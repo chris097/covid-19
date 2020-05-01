@@ -213,6 +213,8 @@
 }
 .covid-country-code img{
     width: 35px;
+    display: flex;
+    flex-direction: row;
 }
 .covid-country-code p{
     font-size: 16px;
