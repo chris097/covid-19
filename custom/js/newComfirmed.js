@@ -11,7 +11,7 @@ const loadJson = get => {
     }
     return fetch(url, option )
     .then(res => res.json())
-    .then(res => (res.Global.NewConfirmed))
+    .then(res => (res.Global.TotalDeaths))
     .then(res => (newComfirmCases.textContent = res))
     .catch(error => console.error(`Error: ${error}`))
 }
