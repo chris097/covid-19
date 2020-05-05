@@ -1,8 +1,22 @@
-let newComfirmCases = document.getElementById('newComfirmedCases')
-let recoveredCase = document.getElementById('recovered')
-let toatalDeath = document.getElementById('total-death')
-let ad = document.querySelector('.realtime-data-card-count-off');
-console.log(ad)
+function engine(a, b){
+    return a.textContent = b;
+}
+/*
+// active cases
+function activeCases(totalCase, totalDeath, recoverCase){
+    return (totalDeath + recoverCase) - totalCase;
+}
+*/
+let newComfirmCases = document.getElementById('newComfirmedCases'),
+    recoveredCase = document.getElementById('recovered'),
+    toatalDeath = document.getElementById('total-death'),
+    active = document.getElementById('activeCases'),
+    newAgregated = document.getElementById('new-aggregate'),
+    newRecover = document.getElementById('new-recovered'),
+    newDeath = document.getElementById('new-death'),
+    newActive = document.getElementById('new-active')
+    
+
 let url = "https://api.covid19api.com/summary"
 const loadJson = get => {
     const option = {
@@ -14,11 +28,22 @@ const loadJson = get => {
     }
     return fetch(url, option )
     .then(res => res.json())
-    .then(res => (result = res.Global))
+    .then(res => console.log(result = res.Global))
     .then(res => (
-        newComfirmCases.textContent = result.TotalConfirmed,
+        /*newComfirmCases.textContent = result.TotalConfirmed,
         recoveredCase.textContent = result.TotalRecovered,
         toatalDeath.textContent = result.TotalDeaths
+        */
+        engine(newComfirmCases,result.TotalConfirmed),
+        engine(recoveredCase,result.TotalRecovered),
+        engine(toatalDeath,result.TotalDeaths),
+        engine(newAgregated, result.NewConfirmed),
+        engine(newRecover, result.NewRecovered),
+        engine(newDeath, result.NewDeaths),
+        /*active.textContent = activeCases(result.TotalRecovered,result.TotalDeaths,result.TotalConfirmed)*/
+        active.textContent = `${(result.TotalConfirmed) - (result.TotalDeaths + result.TotalRecovered)}`,
+        newActive.textContent = `${(result.NewConfirmed) - (result.NewDeaths + result.NewRecovered)}`
+        
         ))
     .catch(error => console.error(`Error: ${error}`))
 }

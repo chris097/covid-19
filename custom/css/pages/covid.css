@@ -121,7 +121,7 @@
 .realtime-data-card-count-off{
     color: #f16969;
 }
-.realtime-data-card-count-off > span{
+#new-recovered{
     color: #118a11;
 }
 
