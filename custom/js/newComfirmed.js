@@ -1,5 +1,5 @@
-function engine(a, b){
-    return a.textContent = b;
+const engine = (className, value) =>{
+    return className.textContent = value;
 }
 /*
 // active cases
@@ -28,7 +28,7 @@ const loadJson = get => {
     }
     return fetch(url, option )
     .then(res => res.json())
-    .then(res => console.log(result = res.Global))
+    .then(res => (result = res.Global))
     .then(res => (
         /*newComfirmCases.textContent = result.TotalConfirmed,
         recoveredCase.textContent = result.TotalRecovered,
