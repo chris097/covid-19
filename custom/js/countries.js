@@ -7,7 +7,7 @@ const dispalySearch = async () =>{
     if(code.value === ''){
         console.log('column should not be empty...')
 
-    }else if(alphabet.indexOf(code.value) !== -1){
+    }else if(alphabet.indexOf(code.value) !== -1 || alphabet.indexOf(code.value) !== code.value.toUpperCase()){
 
       let url1 = await "https://api.covid19api.com/summary"
       const loadSearch = get => {
