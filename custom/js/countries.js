@@ -1,12 +1,15 @@
-const dispalySearch = () =>{
-    let code = document.getElementById('search').value
-    let number = '1234567890'.split('')
-    if(code === ''){
-        console.log('character lenght must be atleat 3')
+const dispalySearch = async () =>{
+  
+    let alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('')
+    let code = document.getElementById('search')
 
-    }else{
 
-      let url1 = "https://api.covid19api.com/summary"
+    if(code.value === ''){
+        console.log('column should not be empty...')
+
+    }else if(alphabet.indexOf(code.value) !== -1){
+
+      let url1 = await "https://api.covid19api.com/summary"
       const loadSearch = get => {
        const option = {
         method: 'Get',
@@ -41,21 +44,23 @@ const dispalySearch = () =>{
 
         console.log(li)
 
-        document.querySelector('.countries-flag-name').appendChild(li)
+        document.querySelector('.countries-flag-name').appendChild(li).addEventListener('click', function(){
+            console.log('something was clicked')
+        })
+
         });
     })
     
     .catch(error => console.error(`Error: ${error}`))
 }
 loadSearch()
+    }else{
+        console.log('please letter is required...')
     }
+};
 
-}
-
-
-
-document.addEventListener('keypress', (e) =>{
+document.addEventListener('keyup', (e) =>{
     if(e.keyCode === 13 || e.charCode === 13 || e.which === 13){
         dispalySearch()
     }
-})
+});

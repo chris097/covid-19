@@ -197,13 +197,14 @@
     color: #333;
 }
 .covid-current-flex-end{
+    width: 20%;
     height: 30px;
     background-color: #f16969;
-    padding: 6px 4px;
-    margin: 5px 0;
-    border-radius: 20px;
+    padding: 5px;
+    border-radius: 10rem;
     font-size: 12px;
-    color: #fff;
+    color: #333;
+    text-align: center;
 }
 .covid-country-code{
     color: #3273dc;
@@ -221,6 +222,13 @@
     margin: 7px 10px;
     position: sticky;
     color: #333;
+}
+.notify-message{
+    background-color: #fff;
+    border-radius: 10px;
+    height: 50px;
+    width: 100px;
+    text-align: center;
 }
 
 .covid-map-card{
