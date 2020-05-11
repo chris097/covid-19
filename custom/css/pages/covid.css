@@ -212,7 +212,7 @@
     margin-right: 10px;
    display: flex;
 }
-.covid-country-code img{
+.covid-country-code > h1{
     width: 35px;
     display: flex;
     flex-direction: row;
