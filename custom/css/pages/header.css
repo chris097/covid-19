@@ -180,6 +180,9 @@
     .covid-prevention-reddot{
         display: none;
     }
+    .covid-banner_container .covid-banner_tittle > p{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 350px){

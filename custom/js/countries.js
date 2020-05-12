@@ -106,6 +106,10 @@ const displayAllCountries = (country) => {
     })
     .join('');
     result.innerHTML = htmlString;
+
+    let ad =result.addEventListener('click', function(){
+        console.log('something was clicked')
+    })
     console.log(result)
 }
 
