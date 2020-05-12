@@ -180,8 +180,12 @@
     .covid-prevention-reddot{
         display: none;
     }
-    .covid-banner_container .covid-banner_tittle > p{
+    .covid-banner_container .covid-banner_tittle > p,
+    .covid-symptoms-text,
+    .covid-contagion-content,
+    .covid-prevention-content{
         width: 300px !important;
+        padding: 0 10px !important;
     }
 }
 
