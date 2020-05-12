@@ -213,7 +213,7 @@
    display: flex;
 }
 .covid-country-code > h1{
-    width: 35px;
+    font-size: 30px;
     display: flex;
     flex-direction: row;
 }

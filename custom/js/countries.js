@@ -41,6 +41,7 @@ const loadSearch = get => {
  })
  .catch(error => console.error(`Error: ${error}`))
 }
+loadSearch() 
 
 // UIController
 const dispalySearch = () =>{
@@ -81,7 +82,7 @@ searchBar.addEventListener('keyup', (e) =>{
 })
 const loadCountries = async () =>{
     try{
-        const res = await fetch('https://api.covid19api.com/summary')
+        const res = await fetch("https://api.covid19api.com/summary")
         let testing = await res.json();
         listCountry = testing.Countries
         displayAllCountries(listCountry)
