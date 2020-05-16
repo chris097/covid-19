@@ -80,6 +80,7 @@ searchBar.addEventListener('keyup', (e) =>{
     console.log(allCountries)
     displayAllCountries(allCountries)
 })
+
 const loadCountries = async () =>{
     try{
         const res = await fetch("https://api.covid19api.com/summary")
