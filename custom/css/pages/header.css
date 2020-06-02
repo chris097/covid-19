@@ -44,6 +44,12 @@
     color: #acaaaa;
     font-size: 14px;
 }
+.covid-19_nav-link ul li a{
+    color: #acaaaa;
+}
+.covid-19_nav-link ul li a:hover{
+    color: #3273dc;
+}
 .covid-19_nav-link ul li:hover{
     color: #3273dc;
     border-bottom: 2px solid #3273dc;
